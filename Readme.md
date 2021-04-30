@@ -11,3 +11,5 @@
 
 运行命令：
 pytest -sv test/web_ut.py --alluredir ./allure-results
+
+allure generate allure-results  -o report/html
