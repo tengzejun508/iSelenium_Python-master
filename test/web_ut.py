@@ -99,7 +99,7 @@ class ISelenium(unittest.TestCase):
         :return:
         '''
         #self.driver.save_screenshot(file_name)
-        with open(file_name, mode='rb', encoding='utf-8') as f:
+        with open(file_name, mode='rb') as f:
             file = f.read()
         allure.attach(file, img_doc, allure.attachment_type.PNG)
 
